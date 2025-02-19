@@ -1,26 +1,6 @@
 import JobModel from "@/models/jobs-model";
 import connectMongo from "../../../../connectMongo";
 
-// export async function GET(request) {
-//   await connectMongo();
-//   return Response.json(await JobModel.find({}), { status: 200 });
-// }
-
-// export async function POST(request) {
-//   await connectMongo();
-//   // insert many jobs
-//   const body = await request.json();
-//   const newJobs = body.jobs;
-//   //   console.log(newJobs);
-//   try {
-//     await JobModel.insertMany(newJobs);
-//     console.log("Jobs inserted successfully");
-//     return new Response("Jobs inserted successfully", { status: 201 });
-//   } catch (error) {
-//     return new Response("Failed to insert jobs" + error, { status: 500 });
-//   }
-// }
-
 // GET http://localhost:3000/api/alljobs?q=software&fullTime=true&location=Canada
 export async function GET(request) {
   await connectMongo();
