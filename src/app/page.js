@@ -17,6 +17,11 @@ export default function Home() {
         <code>https://devjobapi.vercel.app/api/alljobs?q=software&fullTime=true&location=Canada</code>
         <br />
         <code>GET /api/alljobs?q=&lt;searchQuery&gt;&fullTime=&lt;true/false&gt;&location=&lt;location&gt;</code>
+
+        <div>
+          <h2 className="text-2xl mb-5">GET `/api/alljobs/locations` route</h2>
+          <p>Get all Locations</p>
+        </div>
       </div>
     </div>
   );
