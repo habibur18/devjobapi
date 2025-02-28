@@ -34,7 +34,7 @@ userSchema.pre("save", async function (next) {
 
 // Generate JWT tokens
 userSchema.methods.generateTokens = function () {
-  const accessToken = jwt.sign({ userId: this._id }, process.env.JWT_SECRET, { expiresIn: "1m" });
+  const accessToken = jwt.sign({ userId: this._id }, process.env.JWT_SECRET, { expiresIn: "2h" });
 
   const refreshToken = jwt.sign({ userId: this._id }, process.env.JWT_REFRESH_SECRET, { expiresIn: "7d" });
 
