@@ -5,7 +5,7 @@ import connectMongo from "../../../../connectMongo";
 
 export async function GET() {
   await connectMongo();
-  const users = await UserModel.find().select("-password"); // Exclude password
+  const users = await UserModel.find().select("-password -accessToken -refreshToken");
   return NextResponse.json(users);
 }
 
