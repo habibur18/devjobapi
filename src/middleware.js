@@ -10,6 +10,8 @@ export function middleware(req) {
   res.headers.set("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
   res.headers.set("Access-Control-Allow-Headers", "Content-Type");
   res.headers.set("Access-Control-Allow-Credentials", "true");
+  // also allow Access-Control-Allow-Headers
+  res.headers.set("Access-Control-Allow-Headers", "Authorization");
 
   return res;
 }
