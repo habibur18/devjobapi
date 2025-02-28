@@ -1,3 +1,4 @@
+import { UserModel } from "@/models/user-create";
 import { NextResponse } from "next/server";
 import connectMongo from "../../../../../connectMongo";
 
