@@ -7,7 +7,7 @@ export function middleware(req) {
   // console.log(res);
   console.log(`Middleware for ${req.url}`);
   res.headers.set("Access-Control-Allow-Origin", "*");
-  res.headers.set("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+  res.headers.set("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
   res.headers.set("Access-Control-Allow-Headers", "Content-Type");
   res.headers.set("Access-Control-Allow-Credentials", "true");
 
